@@ -1,0 +1,200 @@
+/*
+    ESTILOS DE CABECERA DE LA PÁGINA
+*/
+
+header#Header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+    display: block;
+    background-color: #efefef;
+    -webkit-box-shadow: 0px 2px 3px 0px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow:    0px 2px 3px 0px rgba(50, 50, 50, 0.5);
+    box-shadow:         0px 2px 3px 0px rgba(50, 50, 50, 0.5);
+}
+
+
+@media (min-width: 1200px) {
+
+    .Header .Inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 50px;
+    }
+
+}
+
+
+/* LOGO DE LA EMPRESA ****************/
+.Logo {
+    display: inline-block;
+}
+
+/* MENU DE NAVEGACION ****************/
+nav#Nav {
+    display: inline-block;
+}
+
+.Nav ul.MainMenu {
+    display: flex;
+    list-style: none;
+}
+
+.Nav ul.MainMenu li.MenuItem {
+    position: relative;
+    display: inline-block;
+}
+
+.Nav ul.MainMenu li a {
+    display: block;
+    color: #777;
+    font-size: 1.4em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+@media (min-width: 1200px) {
+
+    .Nav ul.MainMenu li a {
+        padding: 50px 30px;
+    }
+
+}
+
+.Nav ul.MainMenu li.MenuItem-active > a {
+    color: #212121;
+}
+
+.Nav ul.MainMenu li:hover,
+.Nav ul.MainMenu li:hover > a {
+    color: #777;
+    background-color: #333;
+}
+
+/* MENU DE NAVEGACION - Mega Menu ****************/
+.Nav ul.MainMenu li.MenuItem-megamenu > ul.MegaMenu {
+    position: absolute;
+    display: flex;
+    margin: 0;
+    width: 750px;
+    list-style: none;
+    background-color: #333;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-box-shadow: 0px 2px 3px 0px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow:    0px 2px 3px 0px rgba(50, 50, 50, 0.5);
+    box-shadow:         0px 2px 3px 0px rgba(50, 50, 50, 0.5);
+    -o-transition: .3s;
+    -ms-transition: .3s;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.Nav ul.MainMenu li.MenuItem-megamenu:hover > ul.MegaMenu {
+    opacity: 1;
+    visibility: visible;
+}
+
+ul.MegaMenu li.MegaMenuItem {
+    padding: 15px;
+    width: 33%;
+
+}
+
+ul.MegaMenu li.MegaMenuItem span {
+    display: block;
+    margin-bottom: 20px;
+    color: white;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+ul.MegaMenu li.MegaMenuItem > ul {
+    display: block;
+    margin: 0 0 20px 15px;
+    list-style: none;
+}
+
+ul.MegaMenu li.MegaMenuItem ul li {
+    display: block;
+}
+
+ul.MegaMenu li.MegaMenuItem ul li a {
+    padding: 5px;
+    color: white;
+    font-size: 1em;
+    text-transform: none;
+    white-space: nowrap;
+    -o-transition: .3s;
+    -ms-transition: .3s;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+ul.MegaMenu li.MegaMenuItem ul li a:hover {
+    color: #00BBD3;
+}
+
+ul.MegaMenu li.MegaMenuItem .ImageLink {
+    width: 210px;
+    height: auto;
+}
+
+ul.MegaMenu li.MegaMenuItem .ImageLink img {
+    width: 210px;
+    height: auto;
+}
+
+/* MENU DE NAVEGACION - Submenu ****************/
+.Nav ul.MainMenu li.MenuItem > ul.SubMenu {
+    position: absolute;
+    display: block;
+    margin: 0;
+    padding: 40px 0;
+    width: 250px;
+    background-color: #333;
+    list-style: none;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-box-shadow: 0px 2px 3px 0px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow:    0px 2px 3px 0px rgba(50, 50, 50, 0.5);
+    box-shadow:         0px 2px 3px 0px rgba(50, 50, 50, 0.5);
+    -o-transition: .3s;
+    -ms-transition: .3s;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.Nav ul.MainMenu li.MenuItem:hover > ul.SubMenu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.Nav ul.MainMenu li.MenuItem ul.SubMenu li {
+    display: block;
+}
+
+.Nav ul.MainMenu li.MenuItem ul.SubMenu li a {
+    display: block;
+    padding: 10px 30px;
+    color: white;
+    font-size: 1em;
+    text-transform: none;
+    white-space: nowrap;
+    line-height: 1.5;
+    -o-transition: .3s;
+    -ms-transition: .3s;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.Nav ul.MainMenu li.MenuItem ul.SubMenu li a:hover {
+    background-color: #00BBD3;
+}

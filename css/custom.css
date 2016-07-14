@@ -1,0 +1,331 @@
+/*
+    ESTILOS DE CUERPO DE CONTENIDO DE LA PAGINA
+*/
+
+main#Main {
+    display: block;
+    margin-top: 120px;
+}
+
+.Main .Inner {
+    display: block;
+}
+
+.Row {
+    display: block;
+}
+
+.Row .Inner {
+    display: block;
+    margin: 0 auto;
+    width: 1200px;
+}
+
+/* SLIDER INFORMATIVO ****************/
+.Slider {
+    display: block;
+    width: auto;
+    height: 600px;
+    background-image: url(../images/slide1.jpg);
+    background-position: center center;
+}
+
+.SlideTitle {
+    display: inline-block;
+    margin-top: 80px;
+    width: 100%;
+    color: white;
+    font-family: "Roboto";
+    font-size: 8em;
+    font-weight: 400;
+}
+
+.SlideInfo {
+    display: inline-block;
+    margin-top: 50px;
+    width: 50%;
+    color: white;
+    font-size: 1.2em;
+}
+
+button.ClickHere {
+    display: block;
+    margin-top: 50px;
+    padding: 15px;
+    color: white;
+    font-size: 1.5em;
+    background: none;
+    border: 2px solid white;
+    cursor: pointer;
+    -o-transition: .3s;
+    -ms-transition: .3s;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+button.ClickHere:hover {
+    background-color: #00BBD3;
+    border-color: #00BBD3;
+}
+
+/* NOTICIAS RECIENTES ****************/
+.News {
+    display: block;
+    padding: 100px;
+    background-color: #efefef;
+}
+
+h1.NewsTitle {
+    display: block;
+    color: #333;
+    font-size: 3.3em;
+}
+
+.NewsContent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.NewsContent .NewsItem {
+    padding-left: 30px;
+}
+
+.NewsContent .NewsItem:first-child {
+    padding-left: 0;
+}
+
+.NewsItem .NewsItemDate {
+    display: block;
+    margin-bottom: 20px;
+    color: #00BBD3;
+    font-size: 3em;
+    font-weight: 100;
+}
+
+.NewsItem .NewsItemTitle {
+    display: block;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.NewsItem .NewsItemTitle:hover {
+    color: #F34235;
+}
+
+.NewsItem .NewsItemSummary {
+    margin-bottom: 20px;
+    color: #777;
+    line-height: 1.5;
+}
+
+.NewsItem .NewsItemMore {
+    display: inline-block;
+    padding: 15px 20px;
+    color: white;
+    background-color: #00BBD3;
+    border: none;
+    font-size: 1.6em;
+    -o-transition: .3s;
+    -ms-transition: .3s;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.NewsItem .NewsItemMore:hover {
+    background-color: #F34235;
+}
+
+/* INFORMACION CARACTERISTICA ****************/
+.Success {
+    padding: 150px 0;
+    background-image: url(../images/parallax1.jpg);
+    background-position: center center;
+}
+
+.Success .SuccessTitle {
+    display: block;
+    color: white;
+    font-size: 7em;
+    font-weight: 100;
+    text-align: center;
+}
+
+.Success .SuccessInfo {
+    display: block;
+    color: white;
+    font-size: 2.5em;
+    font-weight: 300;
+    text-align: center;
+}
+
+/* LISTA DE PRECIOS ****************/
+.Pricing {
+    display: block;
+    padding: 150px 0;
+    background-color: #efefef;
+}
+
+.PricingContent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.PricingItem {
+    position: relative;
+    display: block;
+    padding: 30px;
+    width: 300px;
+    height: 440px;
+    background-color: white;
+}
+
+.PricingItem:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -2px;
+    right: -2px;
+    background-color: #00BBD3;
+    opacity: 0;
+    visibility: hidden;
+    -o-transition: .3s;
+    -ms-transition: .3s;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.PricingItem .Inner {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    width: auto;
+    border: 2px solid #00BBD3;
+}
+
+.PricingItem .Inner .Plan {
+    display: block;
+    margin-top: 30px;
+    color: #00BBD3;
+    font-size: 2.5em;
+    font-weight: 300;
+    text-align: center;
+}
+
+.PricingItem .Inner .Price {
+    position: relative;
+    display: block;
+    margin-top: 30px;
+    color: #00BBD3;
+    font-size: 4.5em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.PricingItem .Inner .Price:before {
+    display: inline-block;
+    vertical-align: 30px;
+    content: "$";
+    font-size: .3em;
+}
+
+.PricingItem .Inner .Price:after {
+    display: inline-block;
+    content: ".99/month";
+    font-size: .3em;
+}
+
+.PricingItem .Inner ul {
+    margin: 30px 0 0 0;
+    padding: 0 50px;
+    list-style: none;
+}
+
+.PricingItem .Inner ul li {
+    display: block;
+    padding: 15px 0;
+    border-top: 1px solid #cacaca;
+    text-align: center;
+}
+
+.PricingItem .Inner ul li:first-child {
+    border: none;
+}
+
+.PricingItem .Inner .SignUp {
+    display: block;
+    margin: 20px auto 0;
+    padding: 15px 25px;
+    width: 100px;
+    color: white;
+    font-size: 1.5em;
+    background-color: #00BBD3;
+    text-align: center;
+}
+
+.PricingItem:hover:before {
+    content: "";
+    top: -30px;
+    bottom: -30px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.PricingItem:hover .Plan,
+.PricingItem:hover .Price,
+.PricingItem:hover ul li {
+    color: white;
+}
+
+.PricingItem:hover .SignUp {
+    color: #00BBD3;
+    background-color: white;
+    -o-transition: .3s;
+    -ms-transition: .3s;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.PricingItem .SignUp:hover {
+    color: white;
+    background-color: #F34235;
+}
+
+/* LOGOS DE CLIENTES ****************/
+.Clients {
+    display: block;
+    padding: 70px 0;
+    background-color: white;
+}
+
+ul.ClientsLogo {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+ul.ClientsLogo li {
+    display: block;
+}
+
+ul.ClientsLogo li a img {
+    -o-transition: .3s;
+    -ms-transition: .3s;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+ul.ClientsLogo li a:hover img {
+    opacity: .6;
+}
